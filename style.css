@@ -16,7 +16,7 @@ body {
 }
 
 .range-input input {
-    -webkit-appearance: none;
+    appearance: none;
     width: 200px;
     height: 2px;
     background: #4471ef;
@@ -25,16 +25,17 @@ body {
 }
 
 .range-input input::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     width: 20px;
     height: 20px;
     background: #eee;
     border: 2px solid #4471ef;
+    cursor: pointer;
     border-radius: 50%;
 }
 
 .range-input input::-webkit-slider-thumb:hover {
-    background: #4471ef;
+    background-color: #4471ef;
 }
 
 .range-input .value {
@@ -48,5 +49,5 @@ body {
 }
 
 .range-input .value div {
-    transition: all 300ms ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
